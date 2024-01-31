@@ -55,7 +55,7 @@ This command starts both the front-end and back-end concurrently.
 
 ## Live Demo
 
-Check out the live demo of the app hosted on Vercel: [Next-Weather-App Demo](vercel url here).
+Check out the live demo of the app hosted on Vercel: [Next-Weather-App Demo](https://next-weather-app-swart.vercel.app/).
 
 ## Contributing
 
