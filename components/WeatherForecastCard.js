@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getFormattedDate } from '@/helpers/DateFuncs';
 
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -17,11 +18,12 @@ export default function WeatherForecastCard({ weatherForecast }) {
     // Ensure the forecast timeframe is a weekday (not "Today" or "Tonight", etc.)
     const day = WEEKDAYS.includes(forecastTimeframe) ? forecastTimeframe : WEEKDAYS[today]
 
+    const date = getFormattedDate(new Date(earlyForecast.startTime));
 
 
     return (
-        <div className="basis-1/3 flex-1 text-center flex flex-col justify-center items-center bg-white rounded shadow-md p-2">
-            <p className='text-xl'>{day}</p>
+        <div className="basis-1/3 min-w-1/3 flex-auto text-center flex flex-col items-center bg-white/40 rounded shadow-md p-2 md:basis-1/4 md:min-w-1/4">
+            <p>{day} ({date})</p>
             <Image src={`${earlyForecast.icon}`} alt={`${earlyForecast.shortForecast}-icon`} height={75} width={75} />
             <p>
                 {earlyForecast.shortForecast}

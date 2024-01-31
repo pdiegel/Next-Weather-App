@@ -3,7 +3,7 @@
 import WeatherCard from "@/components/WeatherCard";
 import WeatherForecastCard from "@/components/WeatherForecastCard";
 import { useState, useEffect, useCallback } from "react";
-import { FindClosestData } from "@/helpers/WeatherFinder";
+import { FindClosestData } from "@/helpers/DateFuncs";
 import PartlyCloudyImg from "@/public/weather-backgrounds/partly-cloudy.jpg";
 import MostlyCloudyImg from "@/public/weather-backgrounds/mostly-cloudy.jpg";
 import HeavyRainImg from "@/public/weather-backgrounds/heavy-rain.jpg";
@@ -160,7 +160,10 @@ export default function Home() {
       }}
       className="bg-div bg-cover bg-center bg-no-repeat bg-fixed"
     >
-      <main className="p-4">
+      <header className="bg-white/80 p-4 text-center shadow-md mb-8">
+        <h1 className="text-4xl">Weather App</h1>
+      </header>
+      <main className="p-4 max-w-screen-md mx-auto">
         <div className="bg-white/80 rounded p-4 mb-8 shadow-md">
           <label htmlFor="location-input">
             Enter a U.S. based location:

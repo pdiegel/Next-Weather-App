@@ -1,6 +1,6 @@
 "use client";
 
-import { FindClosestData } from "../helpers/WeatherFinder";
+import { FindClosestData } from "@/helpers/DateFuncs";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
