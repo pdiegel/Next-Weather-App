@@ -28,7 +28,7 @@ To set up the React-Weather-App on your local machine, follow these instructions
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/pdiegel/React-Weather-App.git
+    git clone https://github.com/pdiegel/Next-Weather-App.git
     ```
 
 2. Navigate to the project's directory:
@@ -55,7 +55,7 @@ This command starts both the front-end and back-end concurrently.
 
 ## Live Demo
 
-Check out the live demo of the app hosted on Heroku: [React-Weather-App Demo](https://intense-shelf-80981-ec0c29c523a8.herokuapp.com/).
+Check out the live demo of the app hosted on Vercel: [Next-Weather-App Demo](vercel url here).
 
 ## Contributing
 
