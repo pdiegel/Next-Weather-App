@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next-Weather-App
 
-## Getting Started
+## Description
 
-First, run the development server:
+Next-Weather-App is an engaging web application that provides real-time weather information. It automatically detects the user's current geographical coordinates via the browser to display relevant weather updates. The app also offers a search functionality for users to find weather details for any location in the United States. Utilizing the National Weather Service (NWS) API for weather data and the Geocode API from maps.co for location coordinates, it provides both current weather conditions and a weekly forecast.
+
+## Technologies
+
+- React.js
+- Next.js
+- National Weather Service (NWS) API
+- Geocode API from maps.co
+- HTML/CSS
+- TypeScript
+- Tailwind CSS
+
+## Features
+
+- **Automatic Location Detection:** Fetches the user's current location for immediate weather updates.
+- **Search Functionality:** Allows users to search for weather information for different U.S. locations.
+- **Current Weather Info:** Shows the current weather conditions of the chosen location.
+- **Weekly Forecast:** Provides a 7-day weather forecast.
+
+## Installation
+
+To set up the React-Weather-App on your local machine, follow these instructions:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/pdiegel/React-Weather-App.git
+    ```
+
+2. Navigate to the project's directory:
+
+    ```bash
+    cd next-weather-app
+    ```
+
+3. Install necessary dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Running the App
+
+Start the application using:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This command starts both the front-end and back-end concurrently.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Check out the live demo of the app hosted on Heroku: [React-Weather-App Demo](https://intense-shelf-80981-ec0c29c523a8.herokuapp.com/).
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please feel free to fork the repository, make your changes, and submit pull requests. For substantial changes, please open an issue first to discuss what you would like to change.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any queries or further information, please contact me at [philipdiegel@gmail.com](mailto:philipdiegel@gmail.com).
